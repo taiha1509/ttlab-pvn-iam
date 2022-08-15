@@ -1,0 +1,14 @@
+{
+    "errors": {
+        "maxLevel": "Cấp độ của nhóm phải nhỏ hơn hay bằng {limit}",
+        "groupsNotExist": "Một số nhóm người dùng không tồn tại",
+        "groupNotExist": "Nhóm người dùng không tồn tại",
+        "groupHasChild": "Nhóm có nhóm con không được xóa",
+        "nameExist": "Tên nhóm đã tồn tại",
+        "parentNotExisted": "Nhóm cha không tồn tại"
+    },
+    "fields": {
+        "orderBy": "Sắp xếp theo",
+        "keyword": "Từ khóa"
+    }
+}

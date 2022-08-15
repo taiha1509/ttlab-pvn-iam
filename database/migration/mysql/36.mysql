@@ -1,0 +1,80 @@
+# modify roles table
+alter table roles add deletedAt timestamp;
+alter table roles drop column permission;
+alter table roles add description varchar(2000);
+
+alter table users drop column roleId;
+# create user_roles table
+create table user_roles (
+    id int PRIMARY KEY AUTO_INCREMENT,
+    userId int NOT NULL,
+    roleId int NOT NULL,
+    createdAt timestamp DEFAULT CURRENT_TIMESTAMP,
+    createdBy int,
+    updatedAt timestamp DEFAULT CURRENT_TIMESTAMP,
+    updatedBy int,
+    deletedAt timestamp,
+    deletedBy int
+);
+
+# create permission_actions table
+create table permission_actions (
+    id int PRIMARY KEY AUTO_INCREMENT,
+    content enum('read', 'create', 'update', 'delete', 'invite', 'config') NOT NULL,
+    createdAt timestamp DEFAULT CURRENT_TIMESTAMP,
+    createdBy int,
+    updatedAt timestamp DEFAULT CURRENT_TIMESTAMP,
+    updatedBy int,
+    deletedAt timestamp,
+    deletedBy int
+);
+
+# create permission_resources table
+create table permission_resources (
+    id int PRIMARY KEY AUTO_INCREMENT,
+    content enum('user', 'camera', 'user_group', 'camera_group', 'role', 'liveview', 'playback', 'e_map') NOT NULL,
+    createdAt timestamp DEFAULT CURRENT_TIMESTAMP,
+    createdBy int,
+    updatedAt timestamp DEFAULT CURRENT_TIMESTAMP,
+    updatedBy int,
+    deletedAt timestamp,
+    deletedBy int
+);
+
+# create permissions table 
+create table permissions (
+    id int PRIMARY KEY AUTO_INCREMENT,
+    actionId int NOT NULL,
+    resourceId int NOT NULL,
+    createdAt timestamp DEFAULT CURRENT_TIMESTAMP,
+    createdBy int,
+    updatedAt timestamp DEFAULT CURRENT_TIMESTAMP,
+    updatedBy int,
+    deletedAt timestamp,
+    deletedBy int
+);
+
+# create role_permissions table
+create table role_permissions (
+    id int PRIMARY KEY AUTO_INCREMENT,
+    roleId int NOT NULL,
+    permissionId int NOT NULL,
+    createdAt timestamp DEFAULT CURRENT_TIMESTAMP,
+    createdBy int,
+    updatedAt timestamp DEFAULT CURRENT_TIMESTAMP,
+    updatedBy int,
+    deletedAt timestamp,
+    deletedBy int
+);
+
+# update user_tokens table
+alter table user_tokens add updatedAt timestamp DEFAULT CURRENT_TIMESTAMP;
+alter table user_tokens add createdBy int;
+alter table user_tokens add updatedBy int;
+alter table user_tokens add deletedBy int;
+
+# update user_groups table
+alter table user_groups add deletedAt timestamp;
+alter table user_groups add createdBy int;
+alter table user_groups add updatedBy int;
+alter table user_groups add deletedBy int;

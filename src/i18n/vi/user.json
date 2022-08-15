@@ -1,0 +1,56 @@
+{
+    "fields": {
+        "fullName": "Tên",
+        "email": "Email",
+        "phoneNumber": "Số  điện thoại",
+        "username": "Tên truy nhập",
+        "password": "Mật khẩu",
+        "roleId": "Định danh quyền",
+        "groupId": "Định danh nhóm ",
+        "roleIds": "Định danh quyền",
+        "groupIds": "Định danh nhóm ",
+        "cameraIds": "Danh sách định danh camera",
+        "cameraGroupIds": "Danh sách nhóm định danh camera",
+        "activeType": "Kiểu xác thực",
+        "userId": "Id người dùng",
+        "token": "Token",
+        "tokenType": "Kiểu Token"
+    },
+    "message": {
+        "existed": {
+            "username": "Không thành công. Tên truy nhập đã tồn tại.",
+            "email": "Không thành công. Email đã tồn tại.",
+            "phoneNumber": "Không thành công. Số điện thoại đã tồn tại."
+        },
+        "notExisted": {
+            "roleIds": "Môt số vai trò không tồn tại",
+            "userId": "Người dùng không tồn tại",
+            "groups": "Một số nhóm người dùng không tồn tại"
+        },
+        "invalid": {
+            "deleteYourSelf": "Bạn không thể tự xóa chính mình",
+            "status": "Người dùng đã được kích hoạt",
+            "cameraIds": "Một số camera không tồn tại",
+            "cameraGroupList": "Một số nhóm camera không tồn tại"
+        },
+        "delete.superAdmin": "Bạn không thể xóa tài khoản quản trị viên",
+        "update.superAdmin": "Bạn không thể cập nhật khoản quản trị viên"
+    },
+    "errors": {
+        "password": {
+            "misMatch": "Mật khẩu phải chứa ít nhất 6 ký tự, và không bao gồm dấu cách."
+        },
+        "username": {
+            "misMatch": "Tên truy nhập chưa đúng. Vui lòng nhập lại."
+        },
+        "fullName": {
+            "misMatch": "Họ tên chưa đúng. Vui lòng nhập lại."
+        },
+        "email": { 
+            "misMatch": "Email chưa đúng. Vui lòng nhập lại."
+        },
+        "phoneNumber": {
+            "misMatch": "Số điện thoại chưa đúng. Vui lòng nhập lại."
+        }
+    }
+}

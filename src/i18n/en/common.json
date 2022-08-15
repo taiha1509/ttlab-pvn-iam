@@ -1,0 +1,12 @@
+{
+    "fields": {
+        "page": "Page",
+        "limit": "Limit"
+    },
+    "errors": {
+        "invalid": {
+            "objectId": "The {label} field must be an objectId"
+        },
+        "cvm": "There is an error when connecting to CVM system"
+    }
+}

@@ -1,0 +1,6 @@
+alter table users drop column activeType;
+alter table users add activeTypes json not null default ("[]");
+
+alter table user_tokens modify type enum('email_invitation', 'refresh_token', 'active_user') not null default 'refresh_token';
+update user_tokens set type='email_invitation' where type='active_user';
+alter table user_tokens modify type enum('email_invitation', 'refresh_token') not null default 'refresh_token';

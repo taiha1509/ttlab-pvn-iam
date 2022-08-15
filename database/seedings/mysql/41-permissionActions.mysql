@@ -1,0 +1,3 @@
+insert into permission_actions (id, content) values 
+(1, 'read'), (2, 'create'), (3, 'update'), 
+(4, 'delete'), (5, 'config'), (6, 'invite');

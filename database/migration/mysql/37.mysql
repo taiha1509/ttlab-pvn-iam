@@ -1,0 +1,2 @@
+# update column type in user_tokens table
+alter table pvn_vms_iam.user_tokens modify column type enum('email_invitation','refresh_token','forgot_password');

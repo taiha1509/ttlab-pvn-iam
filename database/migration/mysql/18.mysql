@@ -1,0 +1,3 @@
+alter table users add activeType enum('no_verify', 'email_invitation', 'phone_otp') not null default 'no_verify';
+alter table users modify email varchar(255);
+alter table users modify phoneNumber varchar(255);

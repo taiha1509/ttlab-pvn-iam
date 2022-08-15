@@ -1,0 +1,14 @@
+{
+    "errors": {
+        "maxLevel": "The user group level is little or equal than {limit}",
+        "groupsNotExist": "Some user groups do not exist",
+        "groupNotExist": "User groups do not exist",
+        "groupHasChild": "User group has children cannot delete",
+        "nameExist": "User group name is exist",
+        "parentNotExisted": "Parent of user group does not exist"
+    },
+    "fields": {
+        "orderBy": "Order by",
+        "keyword": "Keyword"
+    }
+}

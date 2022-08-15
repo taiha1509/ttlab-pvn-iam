@@ -1,0 +1,14 @@
+{
+    "message" : {
+        "existedName": "Tên vai trò {name} đã tồn tại",
+        "invalidPermission": "Quyền không hợp lệ",
+        "roleAssignToUser": "Vai trò đã đươc gán cho người dùng",
+        "invalidRole": "Vai trò không hợp lệ",
+        "roleNotExist": "Vai trò không tồn tại"
+    },
+    "fields": {
+        "name": "Tên",
+        "permission": "Quyền hạn",
+        "description": "Mô tả"
+    }
+}

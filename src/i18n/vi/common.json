@@ -1,0 +1,12 @@
+{
+    "fields": {
+        "page": "Trang",
+        "limit": "Giới hạn"
+    },
+    "errors": {
+        "invalid": {
+            "objectId": "Trường {name} phải có kiểu objectId"
+        },
+        "cvm": "Có lỗi khi kết nối tới hệ thống CVM"
+    }
+}

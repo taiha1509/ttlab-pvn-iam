@@ -1,0 +1,2 @@
+insert into roles (id, name, description, createdBy) values(1, "supervisor", "supervisor", 1);
+insert into roles (id, name, description, createdBy, isSuperAdmin) values(2, "super admin", "super admin", 1, true);

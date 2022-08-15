@@ -1,0 +1,4 @@
+insert into users (id, email, password, fullName, username, phoneNumber, status, activeTypes) values(1, "hant@tokyotechlab.com",
+"$2a$10$jfmb6b19qlZJklmyK4UPLOlNectwRHb0le.Sx5kOgkRauKaRiyP3y", "Nguyen Tai Ha", "hant", "0999999999", "active", '["email", "username"]');
+insert into users (id, email, password, fullName, username, phoneNumber, status, activeTypes) values(2, "admin@pavana.com",
+"$2a$10$jfmb6b19qlZJklmyK4UPLOlNectwRHb0le.Sx5kOgkRauKaRiyP3y", "Pavana", "pavana", "0999999999", "active", '["email", "username"]');

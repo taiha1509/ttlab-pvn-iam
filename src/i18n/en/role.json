@@ -1,0 +1,14 @@
+{
+    "message" : {
+        "existedName": "Role name {name} already exists",
+        "invalidPermission": "Permission is invalid",
+        "roleAssignToUser": "Role is assigned for users",
+        "invalidRole": "Some role ids are invalid",
+        "roleNotExist": "This role does not exist"
+    },
+    "fields": {
+        "name": "Name",
+        "permission": "Permission",
+        "description": "Description"
+    }
+}

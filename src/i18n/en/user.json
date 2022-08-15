@@ -1,0 +1,56 @@
+{
+    "fields": {
+        "fullName": "Name",
+        "email": "Email",
+        "phoneNumber": "Phone number",
+        "username": "User name",
+        "password": "Password",
+        "roleId": "Role id",
+        "groupId": "Group id",
+        "roleIds": "Role id",
+        "groupIds": "Group id",
+        "cameraIds": "camera ids",
+        "cameraGroupIds": "Camera group ids",
+        "activeType": "Active type",
+        "userId": "User id",
+        "token": "Token",
+        "tokenType": "Token type"
+    },
+    "message": {
+        "existed": {
+            "username": "Username already existed",
+            "email": "Email already existed",
+            "phoneNumber": "Phone number already existed"
+        },
+        "notExisted": {
+            "roleIds": "Some roles do not exist",
+            "userId": "User does not exist",
+            "groupIds": "Some user groups do not exist"
+        },
+        "invalid": {
+            "deleteYourSelf": "You cannot delete yourself",
+            "status": "User already activated",
+            "cameraIds": "Some cameras do not exist",
+            "cameraGroupList": "Some camera groups do not exist"
+        },
+        "delete.superAdmin": "You cannot delete admin acount",
+        "update.superAdmin": "You cannot update admin acount"
+    },
+    "errors": {
+        "password": {
+            "misMatch": "Password must be at least 6 characters, and must not contain space character."
+        },
+        "username": {
+            "misMatch": "Username is incorrect. Please try again."
+        },
+        "fullName": {
+            "misMatch": "Full name is incorrect. Please try again."
+        },
+        "email": {
+            "misMatch": "Email is incorrect. Please try again."
+        },
+        "phoneNumber": {
+            "misMatch": "Phone number is incorrect. Please try again."
+        }
+    }
+}

@@ -1,0 +1,3 @@
+alter table users add column types json comment "This is field contain array of types of an user, if type is system_admin then 
+this user have all permission in modules: users, user-group, roles. If type is device_admin' then this user have all permission in remain modules (camera, camera-group, e-map, liveview, playback)
+in the system.";
